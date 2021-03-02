@@ -36,29 +36,6 @@
 					'Noto Color Emoji';
 			}
 
-			.browser-mockup {
-				border-top: 2em solid rgba(230, 230, 230, 0.7);
-				position: relative;
-				height: 60vh;
-			}
-
-			.browser-mockup:before {
-				display: block;
-				position: absolute;
-				content: '';
-				top: -1.25em;
-				left: 1em;
-				width: 0.5em;
-				height: 0.5em;
-				border-radius: 50%;
-				background-color: #f44;
-				box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
-			}
-
-			.browser-mockup > * {
-				display: block;
-			}
-
 			/* Custom code for the demo */
 		</style>
 	</head>
@@ -66,97 +43,53 @@
 	<body>
 		<header class="min-h-screen bg-gray-900 leading-relaxed tracking-wide flex flex-col">
 			<nav id="header" class="w-full z-30 top-0 text-white py-1 lg:py-6">
-			<div
-				class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6"
-			>
+			<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
 				<div class="pl-4 flex items-center">
-					<a
-						class="text-gray-200 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-						href="#"
-					>
+					<a class="text-gray-200 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
 					Rabson J Phiri
 					</a>
 				</div>
 
-				<div class="block lg:hidden pr-4">
-					<button
-						id="nav-toggle"
-						class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-green-500 appearance-none focus:outline-none"
-					>
-						<svg
-							class="fill-current h-3 w-3"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<title>Menu</title>
-							<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-						</svg>
-					</button>
-				</div>
-
-				<div
-					class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20"
-					id="nav-content"
-				>
+				<div class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20"
+				id="nav-content">
 					<ul class="list-reset lg:flex justify-end flex-1 items-center">
 						<li class="mr-3">
-							<a
-								class="inline-block py-2 px-4 text-black font-bold no-underline"
-								href="#"
-								>Active</a
-							>
+							<a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
 						</li>
 						<li class="mr-3">
-							<a
-								class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-								href="#"
-								>link</a
-							>
+							<a class="inline-block text-black hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
 						</li>
 						<li class="mr-3">
-							<a
-								class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-								href="#"
-								>link</a
-							>
+							<a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">
+								link
+							</a>
 						</li>
 					</ul>
-					<button
-						id="navAction"
-						class="mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded mt-4 lg:mt-0 py-4 px-8 shadow opacity-75"
-					>
-						Action
-					</button>
 				</div>
 			</div>
 		</nav>
 
+		<!-- Hero Text -->
 		<div class="container mx-auto p-4 my-auto">
-				<h1
-					class="my-5 text-2xl md:text-3xl lg:text-5xl text-gray-200 leading-tight"
-				>
-					Hi! I'm <span class="text-yellow-500">{</span> <span class="font-bold">Rabson Phiri</span>  <span class="text-yellow-500">}</span>
-		</h1>
+				<h1 class="my-5 text-2xl md:text-3xl lg:text-5xl text-gray-200 leading-tight">
+					Hi! I'm <span class="text-yellow-500">{</span><span class="font-bold"> Rabson Phiri </span><span class="text-yellow-500">}</span>
+				</h1>
 				<div class="max-w-lg">
 					<p class="bg-red-500 p-3 mb-3 inline-block">Full Stack Web & Mobile Developer</p>
-				<p
-					class="leading-normal text-gray-400 text-base md:text-xl lg:text-2xl mb-8"
-				>
-					I make beautiful and interactive websites and mobile apps with a focus on user engagement
-				</p>
+					<p class="leading-normal text-gray-400 text-base md:text-xl lg:text-2xl mb-8">
+						I make beautiful and interactive websites and mobile apps with a focus on user engagement
+					</p>
 				</div>
 
 				<div>
 					<button
-					class="transition duration-500 ease-in-out rounded border-2 border-blue-600 mx-auto lg:mx-0 hover:bg-blue-800 hover:border-blue-800 text-gray-300 font-bold my-2 bg-blue-600 md:my-6 py-4 px-8 w-48"
-				>
-					Contact Me
-				</button>
-				<button
-					class="transition duration-500 ease-in-out rounded border-2 border-blue-600 bg-opacity-0 mx-auto lg:mx-0 hover:bg-blue-600 text-gray-300 font-bold my-2 md:my-6 py-4 px-8 w-48"
-				>
-					My Resume
-				</button>
+					class="transition duration-500 ease-in-out rounded border-2 border-blue-600 mx-auto lg:mx-0 hover:bg-blue-800 hover:border-blue-800 text-gray-300 font-bold my-2 bg-blue-600 md:my-6 py-4 px-8 w-48">
+						Contact Me
+					</button>
+					<button
+					class="transition duration-500 ease-in-out rounded border-2 border-blue-600 bg-opacity-0 mx-auto lg:mx-0 hover:bg-blue-600 text-gray-300 font-bold my-2 md:my-6 py-4 px-8 w-48">
+						My Resume
+					</button>
 				</div>
 		</div>
 				
@@ -164,83 +97,78 @@
 		</header>
 		<!--Nav-->
 		
-
+		<!-- Languages & Tools -->
 		<section class="bg-white border-b py-12 max-w-4xl mx-auto">
-			<div
-				class="container mx-auto flex flex-wrap items-center justify-between pb-12"
-			>
-				<h2
-					class="w-full my-2 text-xl font-black leading-tight text-center text-gray-800 lg:mt-8"
-				>
+			<div class="container mx-auto flex flex-wrap items-center justify-between pb-12" >
+				<h2 class="w-full my-2 text-xl font-black leading-tight text-center text-gray-800 lg:mt-8">
 					Tools and Languages
 				</h2>
-				<div class="w-full mb-4">
-					<div
-						class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-					></div>
-				</div>
 
-				<div
-					class="flex flex-1 flex-wrap items-center justify-between text-xl text-gray-500 font-bold opacity-75"
-				>
-					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"
-						><i class="fab fa-git-alt text-5xl"></i>
+				<div class="flex flex-1 flex-wrap items-center justify-between text-xl text-gray-500 font-bold opacity-75">
+					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"><i class="fab fa-git-alt text-5xl"></i>
 						<span>Git</span>
-						</span
-					>
+					</span>
 
-					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"
-						><i class="fab fa-js text-5xl"></i>
+					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"><i class="fab fa-js text-5xl"></i>
 						<span>JavaScript (ES6)</span>
-						</span
-					>
+					</span>
 
-					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"
-						><i class="fab fa-css3-alt text-5xl"></i>
+					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"><i class="fab fa-css3-alt text-5xl"></i>
 						<span>CSS</span>
-						</span
-					>
+					</span>
 
-					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"
-						><i class="fab fa-html5 text-5xl"></i>
+					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"><i class="fab fa-html5 text-5xl"></i>
 						<span>HTML</span>
-						</span
-					>
+					</span>
 
-					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"
-						><i class="fab fa-react text-5xl"></i>
+					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"><i class="fab fa-react text-5xl"></i>
 						<span>React.js</span>
-						</span
-					>
+					</span>
 
-					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"
-						><i class="fab fa-node text-5xl"></i>
+					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"><i class="fab fa-node text-5xl"></i>
 						<span>Node.js</span>
-						</span
-					>
+					</span>
 
-					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"
-						><i class="fas fa-database text-5xl"></i>
+					<span class="w-1/2 p-4 md:w-auto flex flex-col items-center"><i class="fas fa-database text-5xl"></i>
 						<span>MySQL</span>
-						</span
-					>
+					</span>
 
 				</div>
 			</div>
-			<p><span class="text-gray-700 font-bold">OTHERS: </span><span class="text-gray-500">Express.js, MongoDB, PHP, Tailwind CSS</span></p> 
+			<p>
+				<span class="text-gray-700 font-bold">OTHERS: </span>
+				<span class="text-gray-500">Express.js, MongoDB, PHP, Tailwind CSS</span>
+			</p> 
 		</section>
 
+		<!-- My Work -->
 		<section class="bg-gray-100 border-b py-8">
 			<div class="container max-w-5xl mx-auto m-8">
-				<h2
-					class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"
-				>
+				<h2 class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
 					My Work
 				</h2>
-				<div class="w-full mb-4">
-					<div
-						class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-					></div>
+
+				<div class="grid sm:grid-cols-2 gap-4 auto-rows-fr items-center my-6">
+					<div class="p-6">
+						<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+							Covid-19 Stats
+						</h3>
+						<p class="text-gray-600 mb-8">
+							A Corona Virus (Covid-19) tracker that displays Covid-19 statistics for a particular country, and updates the statistics every 10 minutes
+							<div>Built With: <p class="inline-block text-gray-700">React.js, <a href="https://github.com/disease-sh/API" class="underline" target="_blank">Disease-sh API</a>
+						</p>
+					</div>
+
+					<button class="transition duration-500 ease-in-out rounded border-2 border-indigo-300 mx-auto lg:mx-0
+					 text-indigo-600 bg-indigo-300 hover:bg-indigo-200 font-bold my-3 md:my-6 py-4 px-6">
+						Live Site
+					</button>
+					<a href="https:www.github.com" class="font-bold text-gray-600 transition duration-500 ease-in-out underline hover:text-indigo-600 inline-block my-3 sm:ml-4">View On Github</a>
+				</p>
+					</div>
+					<div class="w-full h-full px-2">
+						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);"></div>
+					</div>
 				</div>
 
 				<div class="grid sm:grid-cols-2 gap-4 auto-rows-fr items-center">
@@ -269,10 +197,10 @@
 			</div>
 		</section>
 
-		<section class="bg-white border-b py-8 px-5 mx-auto">
-			<div class="container mx-auto flex flex-wrap pt-4 pb-12">
+		<section class="bg-white border-b py-20 px-5 mx-auto">
+			<div class="container mx-auto flex flex-wrap pb-12">
 				<h2
-					class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"
+					class="w-full mb-2 text-5xl font-black leading-tight text-center text-gray-800"
 				>
 					What I do
 				</h2>
@@ -300,7 +228,7 @@
 								Back End Development
 							</h3>
 							<p class="text-gray-300 text-base mb-5">
-								I work with backend languages & tools to fetch, manage, and store data, as well as implementing server-side logic such as payment processing
+								I work with backend languages & tools to fetch, manage, and store data, as well as implementing server-side logic such as payment processing. Security is a must!
 							</p>
 							<div class="text-xs text-gray-400"><i class="fas fa-layer-group"></i> Node.js, PHP, MongoDB, MySQL, Express.js</div>
 				</div>
@@ -323,27 +251,31 @@
 			</div>
 		</section>
 
-		<section class="gradient w-full mx-auto text-center pt-6 pb-12">
-			<h2
-				class="w-full my-2 text-5xl font-black leading-tight text-center text-white"
-			>
-				Call to Action
-			</h2>
-			<div class="w-full mb-4">
-				<div
-					class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
-				></div>
-			</div>
+		<section class="bg-blue-800 w-full mx-auto text-center pt-6 pb-12 px-3">
 
-			<h3 class="my-4 text-3xl font-extrabold">
-				Main Hero Message to sell yourself!
+			<h3 class="my-4 text-3xl text-gray-100 font-extrabold">
+				I'd love to hear from you!
 			</h3>
 
-			<button
-				class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg"
-			>
-				Action!
-			</button>
+			<p class="w-full sm:w-4/6 lg:w-1/2 mx-auto">I'm open to opportunities. If you think we can work together, send me a message by filling out the form below</p>
+
+			<div class="py-8 px-8 rounded-xl max-w-lg mx-auto">
+                <form action="" class="mt-6">
+                    <div class="my-5 text-sm">
+                        <label for="email" class="block text-gray-300 font-bold">Email</label>
+                        <input type="email" autofocus id="email" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-indigo-100 w-full text-gray-600" placeholder="Your Email Address" />
+                    </div>
+                    <div class="my-5 text-sm">
+                        <label for="message" class="block text-gray-400 font-bold">Message</label>
+                        <textarea id="message" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-indigo-100 w-full" placeholder="Type your message"></textarea>
+                    </div>
+
+                    <button class="block text-center text-white bg-gray-800 p-3 duration-300 rounded-sm hover:bg-black w-full">Send Mail</button>
+                </form>
+
+                <p class="mt-12 text-xs text-center font-light text-gray-400"> Don't have an account? <a href="../auth/register.html" class="text-black font-medium"> Create One </a>  </p> 
+
+            </div>
 		</section>
 
 		<!--Footer-->
