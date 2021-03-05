@@ -35,8 +35,6 @@
 					'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
 					'Noto Color Emoji';
 			}
-
-			/* Custom code for the demo */
 		</style>
 	</head>
 
@@ -86,10 +84,10 @@
 					class="btn btn__primary md:my-6">
 						Contact Me
 					</button>
-					<button
-					class="btn btn__transparent md:my-6">
+					<a href="#" download="Rabson Phiri's Resume"
+					class="btn btn__transparent md:my-6 inline-block">
 						My Resume
-					</button>
+					</a>
 				</div>
 		</div>
 				
@@ -100,11 +98,14 @@
 		<!-- About Me -->
 		<section class="bg-gray-100 border-b py-8">
 			<div class="container max-w-5xl mx-auto m-8">
-				<h2 class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
+				<h2 class="heading__secondary text-center">
 					About Me
 				</h2>
 
-				<div class="grid-cols-2 my-6">
+				<div class="grid__cols-2">
+					<div class="w-full h-full px-2">
+						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);"></div>
+					</div>
 					<div class="p-6">
 						<p class="text-gray-600 mb-8">
 							Hey there!👋 I'm <span class="text-gray-800 font-bold">Rabson Phiri</span>, a Full Stack Web Developer currently based in Casablanca, Morocco. I'm also currently studying Computer Engineering, with a focus on Software Engineering.
@@ -128,16 +129,13 @@
 							</a>
 						</div>
 					</div>
-					<div class="w-full h-full px-2">
-						<img class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);">
-					</div>
 				</div>
 
 			</div>
 		</section>
 		
 		<!-- Languages & Tools -->
-		<section class="bg-white border-b py-12 max-w-4xl mx-auto">
+		<section class="section bg-white max-w-4xl">
 			<div class="container mx-auto flex flex-wrap items-center justify-between pb-12" >
 				<h2 class="w-full my-2 text-xl font-black leading-tight text-center text-gray-800 lg:mt-8">
 					Tools and Languages
@@ -181,13 +179,13 @@
 		</section>
 
 		<!-- My Work -->
-		<section class="bg-gray-100 border-b py-8">
+		<section class="section bg-gray-100">
 			<div class="container max-w-5xl mx-auto m-8">
-				<h2 class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
+				<h2 class="heading__secondary text-center">
 					My Work
 				</h2>
 
-				<div class="grid-cols-2 my-6">
+				<div class="grid__cols-2 my-6">
 					<div class="p-6">
 						<h3 class="heading__tertiary">
 							Covid-19 Stats
@@ -209,7 +207,7 @@
 					</div>
 				</div>
 
-				<div class="grid-cols-2">
+				<div class="grid__cols-2">
 					
 					<div class="w-full h-full px-2">
 						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);"></div>
@@ -232,52 +230,46 @@
 			</div>
 		</section>
 
-		<section class="bg-white border-b py-20 px-5 mx-auto">
-			<div class="container mx-auto flex flex-wrap pb-12">
-				<h2
-					class="w-full mb-2 text-5xl font-black leading-tight text-center text-gray-800"
-				>
-					What I do
-				</h2>
-				</div>
+		<section class="section bg-white px-5">
+				<h2 class="heading__secondary text-center">What I do</h2>
 
-				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-8 md:gap-6 auto-rows-fr items-center">
+				<div class="grid__cols-3">
 
 					<div
-						class="bg-gray-800 text-center rounded-md p-5 w-5/6 mx-auto"
+						class="card card__dark card--skills"
 					>
-							<h3 class="w-full font-bold text-lg uppercase text-gray-100 my-4">
+							<h3 class="card__title">
 								Front End Development
 							</h3>
-							<p class="text-gray-300 mb-5">
+							<p class="card__body mb-5">
 								I design elegant, responsive, easy to use and interactive websites.
 								Site performance, optimization and accessibility are at the core of all my designs.
 							</p>
-							<div class="text-xs text-gray-400"><i class="fas fa-layer-group"></i> CSS, Tailwind, HTML, React.js, JavaScript</div>
+							<div class="card__footer"><i class="fas fa-layer-group"></i> CSS, Tailwind, HTML, React.js, JavaScript</div>
 				</div>
 
 				<div
-						class="bg-gray-800 text-center rounded-md p-5 w-5/6 mx-auto"
+						class="card card__dark card--skills"
 					>
-							<h3 class="w-full font-bold text-lg uppercase text-gray-100 my-4">
+							<h3 class="card__title">
 								Back End Development
 							</h3>
-							<p class="text-gray-300 text-base mb-5">
+							<p class="card__body mb-5">
 								I work with backend languages & tools to fetch, manage, and store data, as well as implementing server-side logic such as payment processing. Security is a must!
 							</p>
-							<div class="text-xs text-gray-400"><i class="fas fa-layer-group"></i> Node.js, PHP, MongoDB, MySQL, Express.js</div>
+							<div class="card__footer"><i class="fas fa-layer-group"></i> Node.js, PHP, MongoDB, MySQL, Express.js</div>
 				</div>
 
 				<div
-						class="bg-gray-800 text-center rounded-md p-5 w-5/6 mx-auto"
+						class="card card__dark card--skills"
 					>
-							<h3 class="w-full font-bold text-lg uppercase text-gray-100 my-4">
+							<h3 class="card__title">
 								Full Stack Development
 							</h3>
-							<p class="text-gray-300 text-base mb-5">
+							<p class="card__body mb-5">
 								I combine frontend and backend technologies to implement fully functional websites that handle user authentication, authorization, and integrate third party services
 							</p>
-							<div class="text-xs text-gray-400"><i class="fas fa-layer-group"></i> REST APIs, Passport.js, Oauth
+							<div class="card__footer"><i class="fas fa-layer-group"></i> REST APIs, Passport.js, Oauth
 							</div>
 				</div>
 
@@ -286,7 +278,7 @@
 			</div>
 		</section>
 
-		<section class="bg-blue-800 w-full mx-auto text-center pt-6 pb-12 px-3">
+		<section class="section bg-blue-800 w-full text-center px-3">
 
 			<h3 class="my-4 text-3xl text-gray-100 font-extrabold">
 				I'd love to hear from you!

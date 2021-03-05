@@ -25,12 +25,51 @@
    }
 
    /* grid */
-   .grid-cols-2 {
-      @apply grid sm:grid-cols-2 gap-4 auto-rows-fr items-center;
+   .grid__cols-2 {
+      @apply grid sm:grid-cols-2 gap-4 auto-rows-fr items-center px-3;
+   }
+
+   .grid__cols-3 {
+      @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-8 md:gap-6 auto-rows-fr items-center;
    }
 
    /* Typography */
+   .heading__secondary {
+      @apply text-gray-800 text-5xl font-black leading-tight w-full mb-7;
+   }
    .heading__tertiary {
-      @apply text-3xl text-gray-800 font-bold leading-none mb-3;
+      @apply text-3xl text-gray-800 font-bold leading-none w-full mb-3;
+   }
+
+   /* Cards */
+   .card {
+      @apply p-5 mx-auto rounded-md;
+   }
+
+   .card__title {
+      @apply font-bold text-lg uppercase my-4;
+   }
+
+   .card__dark {
+      @apply bg-gray-800;
+   }
+
+   .card__dark .card__title {
+      @apply text-gray-100;
+   }
+
+   .card__dark .card__body {
+      @apply text-gray-300;
+   }
+   .card__dark .card__footer {
+      @apply text-xs text-gray-400;
+   }
+
+   .card--skills {
+      @apply text-center w-5/6;
+   }
+
+   .section {
+      @apply py-20 mx-auto border-b;
    }
 }
