@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss src/css/styles.css -o public/build/css/styles.css",
+    "watch": "postcss src/css/styles.css -o public/build/css/styles.css --watch",
+    "prod": "NODE_ENV=production postcss src/css/styles.css -o public/build/css/styles.css",
     "server": "live-server public --port=8000"
   },
   "repository": {
@@ -18,13 +20,12 @@
     "url": "https://github.com/RabsonJ/portfolio/issues"
   },
   "homepage": "https://github.com/RabsonJ/portfolio#readme",
-  "dependencies": {
-    "tailwindcss": "^2.0.3"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.2",
     "autoprefixer": "^10.2.4",
     "cssnano": "^4.1.10",
-    "postcss-cli": "^8.3.1"
+    "postcss": "^8.2.7",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
   }
 }

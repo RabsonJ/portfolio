@@ -4,12 +4,6 @@ module.exports = {
 		require('autoprefixer'),
 		require('cssnano')({
 			preset: 'default',
-		}),
-		// process.env.NODE_ENV === 'production' && require('@fullhuman/postcss-purgecss')({
-		//    content: [
-		//       './public/index.html'
-		//    ],
-		//    defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
-		// })
+		})
 	],
 };

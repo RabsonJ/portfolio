@@ -83,11 +83,11 @@
 
 				<div>
 					<button
-					class="transition duration-500 ease-in-out rounded border-2 border-blue-600 mx-auto lg:mx-0 hover:bg-blue-800 hover:border-blue-800 text-gray-300 font-bold my-2 bg-blue-600 md:my-6 py-4 px-8 w-48">
+					class="btn btn__primary md:my-6">
 						Contact Me
 					</button>
 					<button
-					class="transition duration-500 ease-in-out rounded border-2 border-blue-600 bg-opacity-0 mx-auto lg:mx-0 hover:bg-blue-600 text-gray-300 font-bold my-2 md:my-6 py-4 px-8 w-48">
+					class="btn btn__transparent md:my-6">
 						My Resume
 					</button>
 				</div>
@@ -96,6 +96,45 @@
 		</div>
 		</header>
 		<!--Nav-->
+
+		<!-- About Me -->
+		<section class="bg-gray-100 border-b py-8">
+			<div class="container max-w-5xl mx-auto m-8">
+				<h2 class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800">
+					About Me
+				</h2>
+
+				<div class="grid-cols-2 my-6">
+					<div class="p-6">
+						<p class="text-gray-600 mb-8">
+							Hey there!👋 I'm <span class="text-gray-800 font-bold">Rabson Phiri</span>, a Full Stack Web Developer currently based in Casablanca, Morocco. I'm also currently studying Computer Engineering, with a focus on Software Engineering.
+						</p>
+						<p class="text-gray-600 mb-8">
+							<span class="font-bold">Quick Facts:</span>
+							<ul>
+								<li>
+									I write blogs on Hashnode <a href="https://hashnode.com/@RabsonJ" target="_blank" class="text-indigo-700">@RabsonJ</a>
+								</li>
+								<li>Fun Fact: I love cats 🤣 </li>
+							</ul>
+						</p>
+						<div class="mt-3 flex items-center gap-2">
+							<span class="text-sm">Connect with me: </span>
+							<a href="https://linkedin.com/in/rabsonjphiri" target="_blank" title="Rabson Phiri on LinkedIn">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							<a href="https://github.com/RabsonJ" target="_blank" title="Rabson Phiri on GitHub">
+								<i class="fab fa-github"></i>
+							</a>
+						</div>
+					</div>
+					<div class="w-full h-full px-2">
+						<img class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);">
+					</div>
+				</div>
+
+			</div>
+		</section>
 		
 		<!-- Languages & Tools -->
 		<section class="bg-white border-b py-12 max-w-4xl mx-auto">
@@ -148,19 +187,18 @@
 					My Work
 				</h2>
 
-				<div class="grid sm:grid-cols-2 gap-4 auto-rows-fr items-center my-6">
+				<div class="grid-cols-2 my-6">
 					<div class="p-6">
-						<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+						<h3 class="heading__tertiary">
 							Covid-19 Stats
 						</h3>
 						<p class="text-gray-600 mb-8">
 							A Corona Virus (Covid-19) tracker that displays Covid-19 statistics for a particular country, and updates the statistics every 10 minutes
-							<div>Built With: <p class="inline-block text-gray-700">React.js, <a href="https://github.com/disease-sh/API" class="underline" target="_blank">Disease-sh API</a>
+							<div>Tech Stack: <p class="inline-block text-gray-700">React.js, <a href="https://github.com/disease-sh/API" class="underline" target="_blank">Disease-sh API</a>
 						</p>
 					</div>
 
-					<button class="transition duration-500 ease-in-out rounded border-2 border-indigo-300 mx-auto lg:mx-0
-					 text-indigo-600 bg-indigo-300 hover:bg-indigo-200 font-bold my-3 md:my-6 py-4 px-6">
+					<button class="btn btn__secondary">
 						Live Site
 					</button>
 					<a href="https:www.github.com" class="font-bold text-gray-600 transition duration-500 ease-in-out underline hover:text-indigo-600 inline-block my-3 sm:ml-4">View On Github</a>
@@ -171,26 +209,23 @@
 					</div>
 				</div>
 
-				<div class="grid sm:grid-cols-2 gap-4 auto-rows-fr items-center">
+				<div class="grid-cols-2">
+					
+					<div class="w-full h-full px-2">
+						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);"></div>
+					</div>
 					<div class="p-6">
-						<h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+						<h3 class="heading__tertiary">
 							Covid-19 Stats
 						</h3>
 						<p class="text-gray-600 mb-8">
 							A Corona Virus (Covid-19) tracker that displays Covid-19 statistics for a particular country, and updates the statistics every 10 minutes<br />
-							<div>Built With: <p class="inline-block text-gray-700">React.js, <a href="https://github.com/disease-sh/API" class="underline" target="_blank">Disease-sh API</a> </p></div>
+							<div>Tech Stack: <p class="inline-block text-gray-700">React.js, <a href="https://github.com/disease-sh/API" class="underline" target="_blank">Disease-sh API</a> </p></div>
 							<br />
 
-							<button
-					class="transition duration-500 ease-in-out rounded border-2 border-indigo-300 mx-auto lg:mx-0 text-indigo-600 bg-indigo-300 hover:bg-indigo-200 font-bold my-3 md:my-6 py-4 px-6"
-				>
-					Live Site
-				</button>
+							<button class="btn btn__secondary">Live Site</button>
 				<a href="https:www.github.com" class="font-bold text-gray-600 transition duration-500 ease-in-out underline hover:text-indigo-600 inline-block my-3 sm:ml-4">View On Github</a>
 						</p>
-					</div>
-					<div class="w-full h-full px-2">
-						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);"></div>
 					</div>
 				</div>
 
@@ -279,164 +314,5 @@
 		</section>
 
 		<!--Footer-->
-		<footer class="bg-white">
-			<div class="container mx-auto mt-8 px-8">
-				<div class="w-full flex flex-col md:flex-row py-6">
-					<div class="flex-1 mb-6">
-						<a
-							class="text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-							href="#"
-						>
-							<svg
-								class="h-6 w-6 inline-block"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 20 20"
-							>
-								<path d="M13 8V0L8.11 5.87 3 12h4v8L17 8h-4z" />
-							</svg>
-							Bolt App
-						</a>
-					</div>
-
-					<div class="flex-1">
-						<p class="uppercase font-extrabold text-gray-500 md:mb-6">Links</p>
-						<ul class="list-reset mb-6">
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>FAQ</a
-								>
-							</li>
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Help</a
-								>
-							</li>
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Support</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="flex-1">
-						<p class="uppercase font-extrabold text-gray-500 md:mb-6">Legal</p>
-						<ul class="list-reset mb-6">
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Terms</a
-								>
-							</li>
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Privacy</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="flex-1">
-						<p class="uppercase font-extrabold text-gray-500 md:mb-6">Social</p>
-						<ul class="list-reset mb-6">
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Facebook</a
-								>
-							</li>
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Linkedin</a
-								>
-							</li>
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Twitter</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="flex-1">
-						<p class="uppercase font-extrabold text-gray-500 md:mb-6">
-							Company
-						</p>
-						<ul class="list-reset mb-6">
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Official Blog</a
-								>
-							</li>
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>About Us</a
-								>
-							</li>
-							<li class="mt-2 inline-block mr-2 md:block md:mr-0">
-								<a
-									href="#"
-									class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-									>Contact</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<script>
-			/*Toggle dropdown list*/
-			/*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-			var navMenuDiv = document.getElementById('nav-content');
-			var navMenu = document.getElementById('nav-toggle');
-
-			document.onclick = check;
-			function check(e) {
-				var target = (e && e.target) || (event && event.srcElement);
-
-				//Nav Menu
-				if (!checkParent(target, navMenuDiv)) {
-					// click NOT on the menu
-					if (checkParent(target, navMenu)) {
-						// click on the link
-						if (navMenuDiv.classList.contains('hidden')) {
-							navMenuDiv.classList.remove('hidden');
-						} else {
-							navMenuDiv.classList.add('hidden');
-						}
-					} else {
-						// click both outside link and outside menu, hide menu
-						navMenuDiv.classList.add('hidden');
-					}
-				}
-			}
-			function checkParent(t, elm) {
-				while (t.parentNode) {
-					if (t == elm) {
-						return true;
-					}
-					t = t.parentNode;
-				}
-				return false;
-			}
-		</script>
 	</body>
 </html>
