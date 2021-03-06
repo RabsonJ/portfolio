@@ -3,5 +3,9 @@
    "cSpell.words": [
       "mixins",
       "tailwind"
+   ],
+   "cSpell.ignoreWords": [
+      "onclick",
+      "onhover"
    ]
 }
