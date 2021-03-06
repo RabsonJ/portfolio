@@ -79,7 +79,7 @@
 
    /* SECTIONS */
    .hero__text {
-      @apply leading-normal text-gray-400 text-2xl md:text-3xl;
+      @apply leading-normal text-gray-300 text-2xl md:text-3xl;
    }
 
    /* FORM */

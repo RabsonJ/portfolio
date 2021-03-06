@@ -311,15 +311,19 @@
 			</div>
 		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.dots.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
 <script>
-VANTA.DOTS({
+VANTA.NET({
   el: "header",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
   minHeight: 500.00,
   minWidth: 300.00,
+  maxDistance:16,
+  points:7,
+  spacing:17,
+  backgroundColor: 0x111827,
   scale: 1.00,
 //   scaleMobile: 1.00,
   color: 0xF59E0B
