@@ -89,4 +89,8 @@
    .input-label {
       @apply block text-gray-600 font-bold;
    }
+
+   .flex-box-col {
+      @apply w-1/2 p-4 md:w-auto flex flex-col items-center;
+   }
 }
