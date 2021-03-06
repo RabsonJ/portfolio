@@ -40,36 +40,10 @@
 
 	<body>
 		<header class="min-h-screen bg-gray-900 leading-relaxed tracking-wide flex flex-col">
-			<nav id="header" class="w-full z-30 top-0 text-white py-1 lg:py-6">
-			<div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6">
-				<div class="pl-4 flex items-center">
-					<a class="text-gray-200 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-					Rabson J Phiri
-					</a>
-				</div>
-
-				<div class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black p-4 lg:p-0 z-20"
-				id="nav-content">
-					<ul class="list-reset lg:flex justify-end flex-1 items-center">
-						<li class="mr-3">
-							<a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
-						</li>
-						<li class="mr-3">
-							<a class="inline-block text-black hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-						</li>
-						<li class="mr-3">
-							<a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">
-								link
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
 
 		<!-- Hero Text -->
 		<div class="container mx-auto p-4 my-auto">
-				<h1 class="heading__primary">
+				<h1 class="heading__primary mb-8">
 					Hi! I'm <span class="text-yellow-500">{</span><span class="font-bold"> Rabson Phiri </span><span class="text-yellow-500">}</span>
 				</h1>
 				<div class="max-w-lg">
@@ -94,7 +68,7 @@
 		<!--Nav-->
 
 		<!-- About Me -->
-		<section class="bg-gray-100 border-b py-8">
+		<section class="bg-gray-100 border-b">
 			<div class="container max-w-5xl mx-auto m-8">
 				<h2 class="heading__secondary text-center">
 					About Me
@@ -276,33 +250,57 @@
 			</div>
 		</section>
 
-		<section class="section bg-blue-800 w-full text-center px-3">
+		<section class="section bg-gray-100 text-center px-3">
 
-			<h3 class="my-4 text-3xl text-gray-100 font-extrabold">
+			<h3 class="heading__tertiary mb-6">
 				I'd love to hear from you!
 			</h3>
 
-			<p class="w-full sm:w-4/6 lg:w-1/2 mx-auto">I'm open to opportunities. If you think we can work together, send me a message by filling out the form below</p>
+			<p class="w-full sm:w-4/6 lg:w-1/2 mx-auto">
+				I'm open to opportunities. If you think we can work together, send me a message by filling out the form below
+			</p>
 
 			<div class="py-8 px-8 rounded-xl max-w-lg mx-auto">
                 <form action="" class="mt-6">
                     <div class="my-5 text-sm">
-                        <label for="email" class="block text-gray-300 font-bold">Email</label>
-                        <input type="email" id="email" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-indigo-100 w-full text-gray-600" placeholder="Your Email Address" />
+                        <label for="email" class="input-label">Email</label>
+                        <input type="email" id="email" class="input" placeholder="Your Email Address" />
                     </div>
                     <div class="my-5 text-sm">
-                        <label for="message" class="block text-gray-400 font-bold">Message</label>
-                        <textarea id="message" class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-indigo-100 w-full" placeholder="Type your message"></textarea>
+                        <label for="message" class="input-label">Message</label>
+                        <textarea id="message" class="input" placeholder="Type your message"></textarea>
                     </div>
 
-                    <button class="block text-center text-white bg-gray-800 p-3 duration-300 rounded-sm hover:bg-black w-full">Send Mail</button>
+                    <button class="btn w-full bg-gray-800 hover:bg-gray-900 text-gray-300">Send Mail</button>
                 </form>
-
-                <p class="mt-12 text-xs text-center font-light text-gray-400"> Don't have an account? <a href="../auth/register.html" class="text-black font-medium"> Create One </a>  </p> 
-
             </div>
 		</section>
 
 		<!--Footer-->
+		<footer class="py-5 px-3 bg-gray-900">
+			<div class="flex flex-wrap justify-center items-center text-gray-400 gap-4">
+				<ul class="flex items-center gap-3 sm:mr-auto">
+					<li class="text-xs">
+						Connect with me:
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/rabsonjphiri" target="_blank" title="Rabson Phiri on LinkedIn">
+							<i class="fab fa-linkedin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/RabsonJ" target="_blank" title="Rabson Phiri on GitHub">
+							<i class="fab fa-github"></i>
+						</a>
+					</li>				
+				</ul>
+				<p class="text-sm">
+					2021 all rights reserved. By 
+					<a href="https://linkedin.com/in/rabsonjphiri" target="_blank" title="Rabson Phiri on LinkedIn" class="underline text-gray-300">
+						Rabson Phiri
+					</a>
+				</p>
+			</div>
+		</footer>
 	</body>
 </html>
