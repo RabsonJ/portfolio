@@ -172,37 +172,47 @@
 						</h3>
 						<p class="text-gray-600 mb-8">
 							A Corona Virus (Covid-19) tracker that displays Covid-19 statistics for a particular country, and updates the statistics every 10 minutes
-							<div>Tech Stack: <p class="inline-block text-gray-700">React.js, <a href="https://github.com/disease-sh/API" class="underline" target="_blank">Disease-sh API</a>
+							<div>
+								Tech Stack: 
+								<p class="inline-block text-gray-700">
+									React.js, <a href="https://github.com/disease-sh/API" class="underline" target="_blank">Disease-sh API</a>
+								</p>
+							</div>
+							<br />
+
+							<a href="https://covid19-analyser.netlify.app/" class="btn btn__secondary inline-block" target="_blank">
+								Live Site
+							</a>
+							<a href="https://github.com/RabsonJ/Covid-Statistics" class="font-bold text-gray-600 transition duration-500 ease-in-out underline hover:text-indigo-600 inline-block my-3 sm:ml-4" target="_blank">View On Github</a>
 						</p>
 					</div>
-
-					<button class="btn btn__secondary">
-						Live Site
-					</button>
-					<a href="https:www.github.com" class="font-bold text-gray-600 transition duration-500 ease-in-out underline hover:text-indigo-600 inline-block my-3 sm:ml-4">View On Github</a>
-				</p>
-					</div>
 					<div class="w-full h-full px-2">
-						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);"></div>
+						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(./imgs/covid-tracker.png);"></div>
 					</div>
 				</div>
 
-				<div class="grid__cols-2">
+				<div class="grid__cols-2 my-6">
 					
 					<div class="w-full h-full px-2">
-						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg?cs=srgb&dl=pexels-cottonbro-4068314.jpg&fm=jpg);"></div>
+						<div class="block w-full h-full bg-no-repeat bg-center bg-cover" style="background-image: url(./imgs/cribs.png);">
+						</div>
 					</div>
 					<div class="p-6">
 						<h3 class="heading__tertiary">
-							Covid-19 Stats
+							Cribs
 						</h3>
 						<p class="text-gray-600 mb-8">
-							A Corona Virus (Covid-19) tracker that displays Covid-19 statistics for a particular country, and updates the statistics every 10 minutes<br />
-							<div>Tech Stack: <p class="inline-block text-gray-700">React.js, <a href="https://github.com/disease-sh/API" class="underline" target="_blank">Disease-sh API</a> </p></div>
+							Cribs is an architectural company focused on designing, planning and construction of various structures around the world.<br />
+							<div>
+								Tech Stack: 
+								<p class="inline-block text-gray-700">
+									HTML, CSS/Sass, JavaScript (ES6)
+								</p>
+							</div>
 							<br />
 
-							<button class="btn btn__secondary">Live Site</button>
-				<a href="https:www.github.com" class="font-bold text-gray-600 transition duration-500 ease-in-out underline hover:text-indigo-600 inline-block my-3 sm:ml-4">View On Github</a>
+							<a href="https://www.cribsdesign.live/" class="btn btn__secondary inline-block" target="_blank">Live Site</a>
+							<a href="https://github.com/RabsonJ/cribs" class="font-bold text-gray-600 transition duration-500 ease-in-out underline hover:text-indigo-600 inline-block my-3 sm:ml-4">View On Github</a>
 						</p>
 					</div>
 				</div>
@@ -269,7 +279,7 @@
 			</p>
 
 			<div class="py-8 px-8 rounded-xl max-w-lg mx-auto">
-                <form action="" class="mt-6">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="mt-6">
                     <div class="my-5 text-sm">
                         <label for="email" class="input-label">Email</label>
                         <input type="email" id="email" class="input" placeholder="Your Email Address" />
@@ -278,6 +288,7 @@
                         <label for="message" class="input-label">Message</label>
                         <textarea id="message" class="input" placeholder="Type your message"></textarea>
                     </div>
+						  <div data-netlify-recaptcha="true"></div>
 
                     <button class="btn w-full bg-gray-800 hover:bg-gray-900 text-gray-300">Send Mail</button>
                 </form>
